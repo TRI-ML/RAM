@@ -1,0 +1,6 @@
+@inproceedings{tokmakov2022object,
+  title={Object Permanence Emerges in a Random Walk along Memory},
+  author={Tokmakov, Pavel and Jabri, Allan and Li, Jie and Gaidon, Adrien},
+  booktitle={ICML},
+  year={2022}
+}
