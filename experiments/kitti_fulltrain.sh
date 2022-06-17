@@ -1,5 +1,5 @@
-# Initial model pre-trained on PD: 
-# Resulting model trained on KITTI full train: 
+# Initial model pre-trained on PD: https://tri-ml-public.s3.amazonaws.com/github/permatrack/ram_pd.pth
+# Resulting model trained on KITTI full train: https://tri-ml-public.s3.amazonaws.com/github/permatrack/ram_kittifull.pth 
 
 cd src
 # train

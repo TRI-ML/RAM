@@ -6,7 +6,7 @@ This document provides tutorials to train and evaluate RAM. Before getting start
 
 ### PD
 
-To test our pretrained model on the validation set of PD, download the [model](), copy it to `$RAM_ROOT/models/`, and run
+To test our pretrained model on the validation set of PD, download the [model](https://tri-ml-public.s3.amazonaws.com/github/permatrack/ram_pd.pth), copy it to `$RAM_ROOT/models/`, and run
 
 ~~~
 cd $RAM_ROOT/src
@@ -17,7 +17,7 @@ This will give a Track mAP of `71.96` if set up correctly. You can append `--deb
 
 ### KITTI Tracking
 
-To test the tracking performance on the validation set of KITTI with our pretrained model, download the [model](), copy it to `$RAM_ROOT/models/`, and run
+To test the tracking performance on the validation set of KITTI with our pretrained model, download the [model](https://tri-ml-public.s3.amazonaws.com/github/permatrack/ram_kittihalf.pth), copy it to `$RAM_ROOT/models/`, and run
 
 ~~~
 python test.py tracking --exp_id ram_kittihalf --dataset kitti_tracking --dataset_version val_half --track_thresh 0.4 --load_model ../models/ram_kittihalf.pth --is_recurrent --input_len 16 --debug 4 --random_walk --rw_head_depth 2 --pool_kernel 3 --max_age 16 --local_rw_r 0.2  --stream_test --new_thresh 0.5 --sup_reg --max_out_age 4
@@ -25,7 +25,7 @@ python test.py tracking --exp_id ram_kittihalf --dataset kitti_tracking --datase
 
 ### LA-CATER
 
-To test the tracking performance on the test set of LA-CATER, download the [model](), copy it to `$RAM_ROOT/models/`, and run
+To test the tracking performance on the test set of LA-CATER, download the [model](https://tri-ml-public.s3.amazonaws.com/github/permatrack/ram_lacater_stage2.pth), copy it to `$RAM_ROOT/models/`, and run
 
 ~~~
 python test.py tracking --exp_id ram_lacater_stage2 --dataset la_cater --dataset_version train --track_thresh 0.4 --load_model ../models/ram_lacater_stage2.pth --is_recurrent --debug 4 --input_len 70 --num_gru_layers 1 --debug 4 --random_walk --rw_head_depth 2 --pool_kernel 1 --max_age 300 --rw_score_thresh 0.005 --local_rw_r 0.1 --new_thresh 0.5 --stream_test --sup_reg  --trainval
@@ -33,7 +33,7 @@ python test.py tracking --exp_id ram_lacater_stage2 --dataset la_cater --dataset
 
 ### LA-CATER-Moving
 
-To test the tracking performance on the test set of LA-CATER-Moving, download the [model](), copy it to `$RAM_ROOT/models/`, and run
+To test the tracking performance on the test set of LA-CATER-Moving, download the [model](https://tri-ml-public.s3.amazonaws.com/github/permatrack/ram_lacater_moving_stage2.pth), copy it to `$RAM_ROOT/models/`, and run
 
 ~~~
 python test.py tracking --exp_id ram_lacater_moving_stage2 --dataset la_cater_moving --dataset_version train --track_thresh 0.4 --load_model ../models/ram_lacater_moving_stage2.pth --is_recurrent --debug 4 --input_len 70 --num_gru_layers 1 --debug 4 --random_walk --rw_head_depth 2 --pool_kernel 1 --max_age 300 --rw_score_thresh 0.005 --local_rw_r 0.1 --new_thresh 0.5 --stream_test --sup_reg  --trainval

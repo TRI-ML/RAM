@@ -1,5 +1,5 @@
-# Initial model pre-trained on PD: 
-# Resulting model trained on LA-CATER-Moving: 
+# Initial model pre-trained on PD: https://tri-ml-public.s3.amazonaws.com/github/permatrack/ram_pd.pth
+# Resulting model trained on LA-CATER-Moving: https://tri-ml-public.s3.amazonaws.com/github/permatrack/ram_lacater_moving_stage2.pth
 
 cd src
 # first stage of training

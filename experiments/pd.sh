@@ -1,5 +1,5 @@
 # Initial model pre-trained on NuScenes3D: https://drive.google.com/open?id=1ZSG9swryMEfBJ104WH8CP7kcypCobFlU
-# Resulting model trained on PD: 
+# Resulting model trained on PD: https://tri-ml-public.s3.amazonaws.com/github/permatrack/ram_pd.pth
 
 cd src
 # train
