@@ -13,7 +13,7 @@ We use KITTI Tracking to train and evaluate the system in the real world. Follow
 - Download [images](http://www.cvlibs.net/download.php?file=data_tracking_image_2.zip), and [annotations](http://www.cvlibs.net/download.php?file=data_tracking_label_2.zip) from [KITTI Tracking website](http://www.cvlibs.net/datasets/kitti/eval_tracking.php) and unzip. Place or symlink the data as below:
 
   ~~~
-  ${PermaTrack_ROOT}
+  ${RAM_ROOT}
   |-- data
   `-- |-- kitti_tracking
       `-- |-- data_tracking_image_2
@@ -31,7 +31,7 @@ We use KITTI Tracking to train and evaluate the system in the real world. Follow
 - The resulting data structure should look like:
 
   ~~~
-  ${PermaTrack_ROOT}
+  ${RAM_ROOT}
   |-- data
   `-- |-- kitti_tracking
       `-- |-- data_tracking_image_2
@@ -61,11 +61,11 @@ To convert the annotation in a suitable format for evaluating track AP, run this
 
 ### LA-CATER
 
-Is a toy synthetic obejct permanence benchmark. You can download the frames from the corresponding [project web page](https://chechiklab.biu.ac.il/~avivshamsian/OP/OP_HTML.html). After downloading, copy the contents into `$RAM_ROOT/data/la_cater`. The annotations are avaiable under this [link]() and should be palced under `$RAM_ROOT/data/la_cater/annotations`.
+Is a toy synthetic obejct permanence benchmark. You can download the frames from the corresponding [project web page](https://chechiklab.biu.ac.il/~avivshamsian/OP/OP_HTML.html). After downloading, copy the contents into `$RAM_ROOT/data/la_cater`. The annotations are avaiable under this [link](https://tri-ml-public.s3.amazonaws.com/datasets/la_cater_annotations.tar.gz) and should be palced under `$RAM_ROOT/data/la_cater/annotations`.
 
 ### LA-CATER-Moving
 
-Is our extrension of LA-CATER with a moving camera. You can download the frames and annotations under this [link](). After downloading, copy the contents into `$RAM_ROOT/data/la_cater_moving`. 
+Is our extrension of LA-CATER with a moving camera. You can download the frames and annotations under this [link](https://tri-ml-public.s3.amazonaws.com/datasets/la_cater_moving.tar.gz). After downloading, copy the contents into `$RAM_ROOT/data/la_cater_moving`. 
 
 
 ## References
